@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".subMenuChat1">
+    tools:context=".subMenuChat2">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/layout_judul"
@@ -41,6 +41,7 @@
         android:layout_below="@id/layout_judul">
 
         <ImageView
+            android:id="@+id/iv_dokter"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/dokter"
@@ -49,16 +50,18 @@
             android:layout_marginStart="10dp"/>
 
         <TextView
+            android:id="@+id/tv_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NAMA DOKTER"
+            android:hint="NAMA DOKTER"
             android:layout_marginTop="18dp"
             android:layout_marginStart="80dp"/>
 
         <TextView
+            android:id="@+id/tv_spesialis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SPESIALIS"
+            android:hint="SPESIALIS"
             android:layout_marginTop="40dp"
             android:layout_marginStart="80dp"/>
 
@@ -164,6 +167,13 @@
             android:text="Chat Sekarang"
             android:textSize="10dp"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:hint="t"/>
 
     </androidx.cardview.widget.CardView>
 
